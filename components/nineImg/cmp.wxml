@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="img-container">
+        <image class="images"catch:tap="onTap" wx:for="{{imageArr}}"src="{{item}}" wx:key="*this" data-index="{{index}}" wx:if="{{index < 9}}"></image>
+        <text class="img-num" wx:if="{{imageArr.length > 9}}">{{imageArr.length}}</text>
+    </view>
+    <view class="text-container">
+        <text>{{mainTitle}}</text>
+    </view>
+</view>
